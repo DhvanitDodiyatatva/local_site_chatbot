@@ -1,0 +1,20 @@
+{
+  "content": "",
+  "creation": "2026-01-01 00:00:00.000000",
+  "docstatus": 0,
+  "doctype": "Page",
+  "idx": 0,
+  "modified": "2026-01-01 00:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "Chatbot",
+  "name": "helpdesk",
+  "owner": "Administrator",
+  "page_name": "helpdesk",
+  "roles": [
+    {
+      "role": "System Manager"
+    }
+  ],
+  "standard": "Yes",
+  "title": "AI Chat"
+}
