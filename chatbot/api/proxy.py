@@ -1,14 +1,31 @@
-import frappe
 import requests
+import frappe
 
-AI_BACKEND_URL = "http://192.168.2.29:8001/erp-chat"
 
-@frappe.whitelist()
-def forward_to_ai(question):
-    response = requests.post(
-        AI_BACKEND_URL,
-        json={"question": question},
-        timeout=60
-    )
+@frappe.whitelist(allow_guest=True)
+def forward_to_ai(question: str):
+    try:
+        response = requests.post(
+            "http://192.168.2.29:8001/erp-chat",
+            json={"question": question},
+            timeout=30
+        )
 
-    return response.json()["answer"]
+        #  Check HTTP status
+        if response.status_code != 200:
+            frappe.throw(f"AI server error: {response.status_code}")
+
+        #  Ensure valid JSON
+        try:
+            data = response.json()
+        except ValueError:
+            frappe.throw("AI server returned invalid JSON")
+
+        #  Ensure answer exists
+        if "answer" not in data:
+            frappe.throw("AI response missing 'answer' field")
+
+        return data["answer"]
+
+    except requests.exceptions.RequestException as e:
+        frappe.throw(f"AI connection failed: {str(e)}")

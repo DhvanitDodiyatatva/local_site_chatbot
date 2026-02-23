@@ -1,7 +1,7 @@
 frappe.pages["helpdesk"].on_page_load = function (wrapper) {
 	const page = frappe.ui.make_app_page({
 		parent: wrapper,
-		title: "AI Chat",
+		title: "ERPNext Chatbot Helpdesk",
 		single_column: true,
 	});
 

@@ -4,7 +4,7 @@
  "docstatus": 0,
  "doctype": "Page",
  "idx": 0,
- "modified": "2026-02-20 16:03:00.347462",
+ "modified": "2026-02-23 16:13:02.317226",
  "modified_by": "Administrator",
  "module": "chatbot",
  "name": "helpdesk",
@@ -15,5 +15,5 @@
  "standard": "Yes",
  "style": null,
  "system_page": 0,
- "title": "HelpDesk"
+ "title": "ERPNext Chatbot"
 }
