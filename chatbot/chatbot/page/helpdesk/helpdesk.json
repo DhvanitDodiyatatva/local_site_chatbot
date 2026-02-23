@@ -1,20 +1,19 @@
 {
-  "content": "",
-  "creation": "2026-01-01 00:00:00.000000",
-  "docstatus": 0,
-  "doctype": "Page",
-  "idx": 0,
-  "modified": "2026-01-01 00:00:00.000000",
-  "modified_by": "Administrator",
-  "module": "Chatbot",
-  "name": "helpdesk",
-  "owner": "Administrator",
-  "page_name": "helpdesk",
-  "roles": [
-    {
-      "role": "System Manager"
-    }
-  ],
-  "standard": "Yes",
-  "title": "AI Chat"
+ "content": null,
+ "creation": "2026-02-12 18:05:53.196724",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2026-02-20 16:03:00.347462",
+ "modified_by": "Administrator",
+ "module": "chatbot",
+ "name": "helpdesk",
+ "owner": "Administrator",
+ "page_name": "helpdesk",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "HelpDesk"
 }
