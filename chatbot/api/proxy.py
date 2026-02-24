@@ -23,7 +23,7 @@ def forward_to_ai(question: str):
 
         #  Ensure answer exists
         if "answer" not in data:
-            frappe.throw("AI response missing 'answer' field")
+            return "Unexpected response from AI service."
 
         return data["answer"]
 
